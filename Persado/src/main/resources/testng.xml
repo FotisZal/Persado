@@ -19,7 +19,7 @@
     <test verbose="2" preserve-order="true" name="C:/Users/Fotis/Downloads/Persado/Persado">
     <classes>
         <class name="psd.AmazonGiftCardToBasket">
-            <methods><include name="searchSteviaInGoogle"/>
+            <methods><include name="AmazonGiftCardToBasket"/>
             </methods>
         </class>
     </classes>
