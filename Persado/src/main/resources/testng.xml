@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <parameter name="rcHost" value="localhost" />
+    <parameter name="rcPort" value="4444" />
+    <parameter name="targetHostUrl" value="https://www.amazon.com" />
+    <parameter name="debugging" value="true" />
+    <parameter name="browser" value="chrome" />
+    <parameter name="driverType" value="webdriver" />
+    <parameter name="actionsLogging" value="true" />
+    <parameter name="suite.init.context" value="false" />
+
+    <listeners>
+        <listener class-name="com.persado.oss.quality.stevia.selenium.listeners.TestListener"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="C:/Users/Fotis/Downloads/Persado/Persado">
+    <classes>
+        <class name="psd.AmazonGiftCardToBasket">
+            <methods><include name="searchSteviaInGoogle"/>
+            </methods>
+        </class>
+    </classes>
+    </test>
+</suite>
